@@ -1,5 +1,5 @@
 {% set name = "ydata-profiling" %}
-{% set version = "4.0.0" %}
+{% set version = "4.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ydata-profiling-{{ version }}.tar.gz
-  sha256: 0d80cef94054573509a5b77b6b2290ff7ae300052e3d9364f62fceb1b9f15ea9
+  sha256: bec333c77dd4dee9b5a86dce4f8d2bd83731190ee1109dcd401466082fdd60b4
 
 build:
   entry_points:
@@ -45,7 +45,7 @@ requirements:
   run_constrained:
     - jupyter-client >=5.3.4
     - jupyter-core >=4.6.3
-    - tangled-up-in-unicode 0.2.0    
+    - tangled-up-in-unicode 0.2.0
 
 test:
   imports:
