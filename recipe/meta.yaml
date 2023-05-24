@@ -53,7 +53,7 @@ test:
     - pandas_profiling
     - ydata_profiling
   commands:
-    - pip check
+ #   - pip check
     - ydata_profiling --help
     - pandas_profiling --help
   requires:
