@@ -15,7 +15,7 @@ build:
     - pandas_profiling = ydata_profiling.controller.console:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -40,7 +40,7 @@ requirements:
     - statsmodels >=0.13.2,<1
     - typeguard >=2.13.2,<3
     - imagehash ==4.3.1
-    - wordcloud >=1.9.1
+    - wordcloud >=1.8.2.2
     - dacite >=1.6
 
   run_constrained:
