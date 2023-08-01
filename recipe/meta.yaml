@@ -1,5 +1,5 @@
 {% set name = "ydata-profiling" %}
-{% set version = "4.3.2" %}
+{% set version = "4.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ydata-profiling-{{ version }}.tar.gz
-  sha256: b01af103326be629c1624f02d1ce6e8659b1fef884c66cf9b9b0184c7bcd75be
+  sha256: 739c899ce689edaa08042a1fba98b591f4bbf7ecf0b66a4d6012d01de4cab091
 
 build:
   entry_points:
