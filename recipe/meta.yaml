@@ -41,7 +41,7 @@ requirements:
     - typeguard >=4.1.2,<5
     - imagehash ==4.3.1
     - wordcloud >=1.9.1
-    - dacite >=1.6
+    - dacite >=1.8
     - numba >=0.56.0,<59.0
 
   run_constrained:
