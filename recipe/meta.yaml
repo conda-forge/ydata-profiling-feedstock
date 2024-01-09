@@ -55,7 +55,8 @@ test:
     - pandas_profiling
     - ydata_profiling
   commands:
-    - pip check
+# Disabling pip check -   ydata-profiling 0.0.dev0 has requirement wordcloud>=1.9.1, but you have wordcloud 0.0. even though wordcloud >=1.9.1 is used
+    #- pip check
     - ydata_profiling --help
     - pandas_profiling --help
   requires:
