@@ -14,7 +14,7 @@ build:
     - ydata_profiling = ydata_profiling.controller.console:main
     - pandas_profiling = ydata_profiling.controller.console:main
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
