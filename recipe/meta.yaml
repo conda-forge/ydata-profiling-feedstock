@@ -1,5 +1,5 @@
 {% set name = "ydata-profiling" %}
-{% set version = "4.8.3" %}
+{% set version = "4.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ydata-profiling-{{ version }}.tar.gz
-  sha256: d9467ecc8474344347ad89a6839db14762f0230e53df94f83a04810b2fa6cbd7
+  sha256: 9c06cab742dfb929abf942752ff23eb690686e964dfa6c0c7e101982dc9c6b68
 
 build:
   entry_points:
@@ -15,7 +15,7 @@ build:
     - pandas_profiling = ydata_profiling.controller.console:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
