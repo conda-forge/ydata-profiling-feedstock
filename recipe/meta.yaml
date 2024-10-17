@@ -21,6 +21,7 @@ requirements:
   host:
     - python >=3.8,<3.13
     - pip
+    - setuptools
   run:
     - python >=3.8,<3.13
     - scipy >=1.4.1,<1.14
