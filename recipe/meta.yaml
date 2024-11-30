@@ -22,6 +22,7 @@ requirements:
     - pip
     - setuptools
     - setuptools-scm
+    - toml
   run:
     - python >={{ python_min }},<3.13
     - scipy >=1.4.1,<1.14
