@@ -12,7 +12,6 @@ source:
 build:
   entry_points:
     - ydata_profiling = ydata_profiling.controller.console:main
-    - pandas_profiling = ydata_profiling.controller.console:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 1
@@ -54,14 +53,13 @@ requirements:
 
 test:
   imports:
-    - pandas_profiling
     - ydata_profiling
   commands:
 # Disabling pip check -   ydata-profiling 0.0.dev0 has requirement wordcloud>=1.9.3, but you have wordcloud 0.0.0.
-    - "pip show {{ name }} | grep -Fx 'Version: {{ version }}'"
     - pip check
+    # make sure the version reported by pip is correct
+    - "pip show {{ name }} | grep -Fx 'Version: {{ version }}'"
     - ydata_profiling --help
-    - pandas_profiling --help
   requires:
     - pip
     - python {{ python_min }}
