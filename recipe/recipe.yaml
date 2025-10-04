@@ -1,8 +1,9 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/prefix-dev/recipe-format/main/schema.json
 schema_version: 1
 
 context:
   name: ydata-profiling
-  version: 4.17.0
+  version: "4.17.0"
 
 package:
   name: ${{ name|lower }}
