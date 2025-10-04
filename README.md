@@ -9,7 +9,7 @@ Package license: MIT
 
 Summary: Generate profile report for pandas DataFrame
 
-Documentation: https://ydata-profiling.ydata.ai
+Documentation: https://ydata-profiling.ydata.ai/
 
 Current build status
 ====================
