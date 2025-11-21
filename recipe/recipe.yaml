@@ -3,18 +3,18 @@ schema_version: 1
 
 context:
   name: ydata-profiling
-  version: "4.17.0"
+  version: "4.18.0"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/ydata-profiling-${{ version }}.tar.gz
-  sha256: 6ead76a9bffe170a6fcb6195248cd5110bdfc7971af9257c0e6716b4f1e65815
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
+  sha256: c3a0afd82e605c6903dd140b5fc41dabad8ee690601ad3d6c27da28e80b07cc6
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
