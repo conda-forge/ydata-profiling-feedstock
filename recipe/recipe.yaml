@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: ydata-profiling
-  version: "4.18.0"
+  version: "4.18.1"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: c3a0afd82e605c6903dd140b5fc41dabad8ee690601ad3d6c27da28e80b07cc6
+  sha256: 6dc529893c84abecda2e6038564cabcd69a6b801a730e077b61b6d500a98f30c
 
 build:
   number: 0
