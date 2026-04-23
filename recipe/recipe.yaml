@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: ydata-profiling
-  version: "4.18.1"
+  version: 4.18.4
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 6dc529893c84abecda2e6038564cabcd69a6b801a730e077b61b6d500a98f30c
+  sha256: c19a0b3dec081da024d18800ffcee0160b076edecef66ca55c75e00e6ac15e21
 
 build:
   number: 0
@@ -51,7 +51,13 @@ requirements:
     - wordcloud >=1.9.4
     - dacite >=1.9,<2
     - numba >=0.60,<0.63
-    #- ipython <9.0
+    - arm_pyart
+    - ipywidgets
+    - pyspark
+    - packaging
+    - markupsafe
+    - ipython
+    - networkx
   run_constraints:
     - jupyter-client >=5.3.4
     - jupyter-core >=4.6.3
