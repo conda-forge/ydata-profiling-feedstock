@@ -29,6 +29,7 @@ requirements:
     - wheel >=0.38.4,<1.0.0
     - pip
   run:
+    - setuptools <81
     - python >=${{ python_min }},<4.0
     - scipy >=1.8,<1.17
     - pandas >1.5,<3.0,!=1.4.0
